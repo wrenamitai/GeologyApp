@@ -1,0 +1,32 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 513
+        },
+        "cap-insets" : {
+          "right" : 0,
+          "left" : 511
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "1024.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeologyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWF-Po-t5k">
+                                <rect key="frame" x="144" y="162" width="126" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bigmanny"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASq-QK-vK9">
+                                <rect key="frame" x="154" y="589" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ber-36-9VK" kind="presentation" identifier="toPickHeads" modalTransitionStyle="crossDissolve" id="ymY-wO-otk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Np-XY-2DJ">
+                                <rect key="frame" x="161" y="465" width="93" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7u-Cp-Fzh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kD-Np-t5H">
+                                <rect key="frame" x="20" y="197" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Rutgers Geology Museum Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79905615482233505" green="0.11953145814262206" blue="0.0069036721993719257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="W9x-7M-I21" appends="YES" id="Nq4-96-qGe"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="manny" destination="mWF-Po-t5k" id="aVT-Wr-U0m"/>
+                        <outlet property="playButton" destination="6Np-XY-2DJ" id="o8n-J8-ppF"/>
+                        <outlet property="skipButton" destination="ASq-QK-vK9" id="oXD-vy-7qc"/>
+                        <outlet property="titleButton" destination="9kD-Np-t5H" id="Dpl-aN-YZi"/>
+                        <segue destination="J9Q-1R-B1v" kind="presentation" identifier="nextIntro" modalTransitionStyle="crossDissolve" id="ZxH-lx-bRs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="W9x-7M-I21">
+                    <connections>
+                        <action selector="tapScreen:" destination="BYZ-38-t0r" id="47c-Uv-u2r"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="132.58928571428572"/>
+        </scene>
+        <!--Second Intro View Controller-->
+        <scene sceneID="uGy-HR-hBT">
+            <objects>
+                <viewController id="J9Q-1R-B1v" customClass="SecondIntroViewController" customModule="GeologyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QD3-dE-qxt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Head #1" translatesAutoresizingMaskIntoConstraints="NO" id="01K-lX-S6g">
+                                <rect key="frame" x="211" y="111" width="148" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Body #2" translatesAutoresizingMaskIntoConstraints="NO" id="M8q-lr-yJ1">
+                                <rect key="frame" x="16" y="394" width="160" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ix-1z-7To">
+                                <rect key="frame" x="57" y="175" width="100" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Pick a head..."/>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tg0-JL-Pzo">
+                                <rect key="frame" x="211" y="459" width="183" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="...then pick a body..."/>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3Q-6e-dGa">
+                                <rect key="frame" x="68" y="696" width="278" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="...and your animal is complete!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.59167418199999999" blue="0.73702013980000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="f2G-Lp-U9q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TxU-A8-Kll" appends="YES" id="fOU-U8-X7T"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bodyImage" destination="M8q-lr-yJ1" id="tYT-np-Hr6"/>
+                        <outlet property="bodyLabel" destination="Tg0-JL-Pzo" id="QET-Ox-n8a"/>
+                        <outlet property="completeLabel" destination="F3Q-6e-dGa" id="ZEs-QK-qge"/>
+                        <outlet property="headImage" destination="01K-lX-S6g" id="dyW-30-R7r"/>
+                        <outlet property="headLabel" destination="0ix-1z-7To" id="e58-8S-qQy"/>
+                        <segue destination="Ber-36-9VK" kind="presentation" identifier="toPickHead" modalTransitionStyle="crossDissolve" id="VHV-TJ-22c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSM-Rj-Acl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="TxU-A8-Kll">
+                    <connections>
+                        <action selector="tapGesture:" destination="J9Q-1R-B1v" id="RK2-iS-utc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="723.1884057971015" y="132.58928571428572"/>
+        </scene>
+        <!--Pick Heads Controller-->
+        <scene sceneID="bla-qQ-k5x">
+            <objects>
+                <viewController id="Ber-36-9VK" customClass="PickHeadsController" customModule="GeologyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0PS-Qi-DcC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a head!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-D2-rnV">
+                                <rect key="frame" x="122" y="69" width="193" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzf-AY-GGN">
+                                <rect key="frame" x="49" y="149" width="114" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="animalHeadTest"/>
+                                <state key="normal" image="Head #1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="headOnePressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="4me-l6-CzU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwO-Ns-5mB">
+                                <rect key="frame" x="179" y="548" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="e1i-ra-3AP"/>
+                                </connections>
+                            </button>
+                            <button tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWK-zQ-glf">
+                                <rect key="frame" x="251" y="149" width="89" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="animalBody"/>
+                                <state key="normal" image="Head #2"/>
+                                <connections>
+                                    <action selector="headTwoPressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="NSk-ip-0LV"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyk-0Y-Uv3">
+                                <rect key="frame" x="32" y="295" width="102" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="animalHeadTest"/>
+                                <state key="normal" image="Head #3"/>
+                                <connections>
+                                    <action selector="headThreePressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="fsn-c2-sq5"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d43-dA-qQb">
+                                <rect key="frame" x="234" y="294" width="122" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="animalBody"/>
+                                <state key="normal" image="Head #4"/>
+                                <connections>
+                                    <action selector="headFourPressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="YiT-5V-mQi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZS-eP-Qno">
+                                <rect key="frame" x="100" y="452" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="skJ-0F-FbQ"/>
+                                    <action selector="nextButtonPressed:" destination="Ber-36-9VK" eventType="touchUpInside" id="Eep-J1-XHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.52702606419999998" green="0.86173173889999999" blue="0.80556886819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="vhl-cV-bXY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="WZS-eP-Qno" id="oen-XU-qDs"/>
+                        <outlet property="nextButton" destination="FwO-Ns-5mB" id="au1-ES-mgy"/>
+                        <outlet property="partFourButton" destination="d43-dA-qQb" id="gMO-GK-DyQ"/>
+                        <outlet property="partOneButton" destination="Xzf-AY-GGN" id="ARV-3r-oK0"/>
+                        <outlet property="partThreeButton" destination="Eyk-0Y-Uv3" id="tbC-li-kGJ"/>
+                        <outlet property="partTwoButton" destination="lWK-zQ-glf" id="epY-ed-Ltv"/>
+                        <segue destination="1b6-og-wFr" kind="presentation" identifier="toPickBody" modalTransitionStyle="crossDissolve" id="wTp-BO-aKc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Tl-Mi-3BH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1437.68115942029" y="95.758928571428569"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="pr9-LR-7bW">
+            <objects>
+                <viewController id="Upb-G6-mXN" customClass="EndViewController" customModule="GeologyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ohd-WS-kfa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great Job!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va0-y9-YJt">
+                                <rect key="frame" x="134" y="190" width="147" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqJ-Ck-iEw">
+                                <rect key="frame" x="87" y="538" width="240" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NAU-1S-kd1"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalImage" destination="wqJ-Ck-iEw" id="vLR-bj-YQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTL-9P-k5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.057971014492765" y="817.63392857142856"/>
+        </scene>
+        <!--Ice Age View Controller-->
+        <scene sceneID="szq-5n-JOq">
+            <objects>
+                <viewController id="smy-6M-bMF" customClass="IceAgeViewController" customModule="GeologyApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z4N-dM-kAS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ice Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTr-QW-smF">
+                                <rect key="frame" x="148" y="68" width="119" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0GG-Rn-hwk" customClass="ProgressMeter" customModule="ProgressMeter">
+                                <rect key="frame" x="87" y="367" width="240" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <real key="value" value="-1.3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressTintColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dividerColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfDivisions">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIf-Qx-hVs">
+                                <rect key="frame" x="99" y="640" width="216" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FH-ET-2yj">
+                                <rect key="frame" x="140" y="111" width="134" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bigmanny"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8V-fU-htu">
+                                <rect key="frame" x="32" y="271" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See scores again"/>
+                                <connections>
+                                    <action selector="scoresAgainPressed:" destination="smy-6M-bMF" eventType="touchUpInside" id="EFP-Gr-G6v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03L-x1-6Bc">
+                                <rect key="frame" x="252" y="271" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOverPressed:" destination="smy-6M-bMF" eventType="touchUpInside" id="BJj-e8-0OK"/>
+                                    <segue destination="xaq-pb-w0O" kind="unwind" unwindAction="prepareForUnwindWithSegue:" id="Us3-wN-s4g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOK-an-r6p">
+                                <rect key="frame" x="178" y="433" width="58" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="Upb-G6-mXN" kind="presentation" identifier="toEnd" modalTransitionStyle="crossDissolve" id="Dfn-2l-2G9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55349678516492506" green="1" blue="0.92601278165038847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="2s9-I7-0MQ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="elH-7Z-RB8" appends="YES" id="rDe-wL-xez"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="exit" destination="AOK-an-r6p" id="TpD-Bb-hc6"/>
+                        <outlet property="finalAnimal" destination="JIf-Qx-hVs" id="aRg-KE-1jO"/>
+                        <outlet property="manny" destination="2FH-ET-2yj" id="ieM-9p-B83"/>
+                        <outlet property="scoreBar" destination="0GG-Rn-hwk" id="5zt-B8-tYe"/>
+                        <outlet property="scoresAgain" destination="r8V-fU-htu" id="BeU-GZ-1tM"/>
+                        <outlet property="startOver" destination="03L-x1-6Bc" id="Sfi-kb-LT2"/>
+                        <outlet property="timePeriod" destination="OTr-QW-smF" id="Uu9-V6-9eB"/>
+                        <segue destination="xaq-pb-w0O" kind="unwind" identifier="unwindToViewController" unwindAction="prepareForUnwindWithSegue:" id="peA-n4-LRn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qq3-RO-Qbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="xaq-pb-w0O" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="elH-7Z-RB8">
+                    <connections>
+                        <action selector="tapGesture:" destination="smy-6M-bMF" id="9u3-i3-eNc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="727.536231884058" y="817.63392857142856"/>
+        </scene>
+        <!--Pick Bodies View Controller-->
+        <scene sceneID="Cdj-lk-xah">
+            <objects>
+                <viewController id="1b6-og-wFr" customClass="PickBodiesViewController" customModule="GeologyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OS8-kE-rJt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick a body!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRZ-5C-VWR">
+                                <rect key="frame" x="155" y="81" width="105" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7W-r8-Evd">
+                                <rect key="frame" x="56" y="141" width="116" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="otherAnimal"/>
+                                <state key="normal" image="Body #1"/>
+                                <connections>
+                                    <action selector="bodyOnePressed:" destination="1b6-og-wFr" eventType="touchUpInside" id="eZt-Dk-6QY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v55-I7-bCT">
+                                <rect key="frame" x="243" y="130" width="124" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="vultureAnimal"/>
+                                <state key="normal" image="Body #2"/>
+                                <connections>
+                                    <action selector="bodyTwoPressed:" destination="1b6-og-wFr" eventType="touchUpInside" id="Aaz-Qq-j2u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJc-N8-nyL">
+                                <rect key="frame" x="183" y="530" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="1b6-og-wFr" eventType="touchUpInside" id="ZXT-2P-ecj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvk-Dv-9N0">
+                                <rect key="frame" x="43" y="338" width="129" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="otherAnimal"/>
+                                <state key="normal" image="Body #3"/>
+                                <connections>
+                                    <action selector="bodyThreePressed:" destination="1b6-og-wFr" eventType="touchUpInside" id="Niy-7g-2gc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZf-n4-UF2">
+                                <rect key="frame" x="240" y="329" width="127" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="vultureAnimal"/>
+                                <state key="normal" image="Body #4"/>
+                                <connections>
+                                    <action selector="bodyFourPressed:" destination="1b6-og-wFr" eventType="touchUpInside" id="b2g-RH-kDA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79905615480000003" green="0.1195314581" blue="0.0069036721990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Qtk-s8-5Ti"/>
+                    </view>
+                    <connections>
+                        <outlet property="bodyFour" destination="wZf-n4-UF2" id="W6E-S8-UfY"/>
+                        <outlet property="bodyOne" destination="G7W-r8-Evd" id="AvP-Of-0Ka"/>
+                        <outlet property="bodyThree" destination="dvk-Dv-9N0" id="i5I-Nb-BjF"/>
+                        <outlet property="bodyTwo" destination="v55-I7-bCT" id="2bz-oa-h8e"/>
+                        <outlet property="nextButton" destination="TJc-N8-nyL" id="tR6-NU-fJM"/>
+                        <segue destination="smy-6M-bMF" kind="presentation" identifier="toIceAge" modalTransitionStyle="crossDissolve" id="KsO-6A-a5g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ts-RR-jdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1405.7971014492755" y="816.29464285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Body #1" width="215" height="224"/>
+        <image name="Body #2" width="186.5" height="164.5"/>
+        <image name="Body #3" width="143.5" height="126"/>
+        <image name="Body #4" width="131" height="128.5"/>
+        <image name="Head #1" width="133.5" height="147"/>
+        <image name="Head #2" width="155" height="139.5"/>
+        <image name="Head #3" width="148" height="125"/>
+        <image name="Head #4" width="154.5" height="126.5"/>
+        <image name="bigmanny" width="655.5" height="888"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ymY-wO-otk"/>
+    </inferredMetricsTieBreakers>
+</document>

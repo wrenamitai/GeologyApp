@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-GeologyApp/Pods-GeologyApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ButtonAppearance/ButtonAppearance.framework
+${BUILT_PRODUCTS_DIR}/CMPopTipView/CMPopTipView.framework
+${BUILT_PRODUCTS_DIR}/ProgressMeter/ProgressMeter.framework

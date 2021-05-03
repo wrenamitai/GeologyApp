@@ -1,0 +1,24 @@
+PODS:
+  - ButtonAppearance (0.1.1)
+  - CMPopTipView (2.3.2)
+  - ProgressMeter (0.1.6)
+
+DEPENDENCIES:
+  - ButtonAppearance
+  - CMPopTipView (~> 2.3)
+  - ProgressMeter
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ButtonAppearance
+    - CMPopTipView
+    - ProgressMeter
+
+SPEC CHECKSUMS:
+  ButtonAppearance: 36534cf98eedffd5b17a2d73ab4087f598fc9442
+  CMPopTipView: 2d56ef53e8e739c4e63ad97a5a88b97712b46c7b
+  ProgressMeter: f24e399e876e4eb63a800d26639f1777b31e8a74
+
+PODFILE CHECKSUM: 23e16a51aafaece68a00e2e8b8d94dd81773dd97
+
+COCOAPODS: 1.7.5

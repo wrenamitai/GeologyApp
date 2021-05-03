@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DC18921DE7F3A0E6F806954E0611D74 /* CMPopTipView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D3BA0DE80801B0A9FE6E14879DE1B3 /* CMPopTipView-dummy.m */; };
+		21544ECEE0EB1EB8496DCB40D2277A3B /* Pods-GeologyApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B44E675CBABDEC5D4DE59359630B4B /* Pods-GeologyApp-dummy.m */; };
+		32B4F024EE82FE181D9425E3C0845D46 /* CMPopTipView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A45C26D65270DF349F3E3CA37835E19 /* CMPopTipView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33859C142E579648EF4A893ED341CEFF /* UIButton+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = B82426582A2E72AA4FF192208FE3A8A7 /* UIButton+Appearance.m */; };
+		3FFA956BFEA6410F3E5887BBEA4671F5 /* Pods-GeologyApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 902A7A03C693EFF98BC4C4BC8B0B839D /* Pods-GeologyApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		421D996DC6EFCBBDEB0EC47CD66852EC /* ProgressAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E957293E672BE8CE48646488FA71D76E /* ProgressAnnotation.swift */; };
+		48374B5241325BBA9BBA7F2AC5FFDD8F /* ButtonAppearance-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0300C60E8B45A752FBD6FA79A1FF57 /* ButtonAppearance-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B85391DE56D8CBC3C19D5E1389EBF05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		4DB3603830BE2A092D9CCAB053A43431 /* ProgressMeter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD4E3BB367EE5CA2BAE6DEC2AE4249D /* ProgressMeter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A654F6B37F44126E5417D4E8D4DFD29 /* CMPopTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 857D381B9CD5B72309F63245DFD55311 /* CMPopTipView.m */; };
+		74C11C4FE13668C6D4DA8E43AB54B054 /* ProgressMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ABA1BC92CF31349D597A96196018F5 /* ProgressMeter.swift */; };
+		77305FF865CE5D6C0D3A6BF9471A2D74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		AFDD925D7BAB62B184BBD6B2E60191DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		B3B8D532014889CFD7A022F3EFBDB3EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		C17D4AE48EF714028CCE4444ECB315C7 /* UIButton+Appearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A871D2DAD40D2EC16D1935FAFFD83B /* UIButton+Appearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C44D97DFF96516AC56A27E7B5ADEE63C /* AHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DF308B9C735DD3050D1DD4D013C0E9E4 /* AHButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAABF17362283A749130E9F954DCFFD9 /* AHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6814A83D7B61B09597C76A5C4687F58 /* AHButton.m */; };
+		CE7EA0FF1E55BB61A680CF4F9585CDD8 /* ButtonAppearance.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 62F8A91DCFF2500DC7F17C367D987475 /* ButtonAppearance.bundle */; };
+		D976AA6D439604C438F24AE6509C1A89 /* ProgressMeter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 823F6F30FDCFEBA6918AD307F4E0E3C6 /* ProgressMeter-dummy.m */; };
+		EF55CEB7C3380FB0FCF91F181EAF3FDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		EF8D2058F7AA4F94B8A10A901B2AEA84 /* ButtonAppearance-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2B377048153267CFDE11751C0DE50A /* ButtonAppearance-dummy.m */; };
+		F8DEE4FCBD617916198554CA9B10D1AD /* CMPopTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 04D32E4BDD084D92C80E139D0A548EA2 /* CMPopTipView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		174D191B719B219F5935937467167D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A70BAA81DAD05832441F8E2E2FB5DC;
+			remoteInfo = ProgressMeter;
+		};
+		351405BF710C9E4365FE6D440C731D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BBD78E178D7E6D4F10B606592EC7E4C;
+			remoteInfo = CMPopTipView;
+		};
+		63C0C3C964E3B3FB7B7F7C437AB38BA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FFB9D10B730282109F6C25C20B2E61C;
+			remoteInfo = "ButtonAppearance-ButtonAppearance";
+		};
+		6FB46E529C1F9D986797E8AFAABC0811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73F2BF90EEA9BA729E4AD732ADBE8659;
+			remoteInfo = ButtonAppearance;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04D32E4BDD084D92C80E139D0A548EA2 /* CMPopTipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMPopTipView.h; path = CMPopTipView/CMPopTipView.h; sourceTree = "<group>"; };
+		04D3BA0DE80801B0A9FE6E14879DE1B3 /* CMPopTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMPopTipView-dummy.m"; sourceTree = "<group>"; };
+		08D402C8E74BDBF0CFD391C34D526999 /* CMPopTipView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMPopTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B6D1648F428A95BC0A7830C4EB6E048 /* Pods-GeologyApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeologyApp-Info.plist"; sourceTree = "<group>"; };
+		0D7A8101167A3C001532C41E17894278 /* ButtonAppearance-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ButtonAppearance-Info.plist"; sourceTree = "<group>"; };
+		1308080217100DBC5614BFA3C2787D21 /* Pods-GeologyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeologyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		14FF3BC99056001E2953E124BC7E3046 /* ButtonAppearance.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ButtonAppearance.modulemap; sourceTree = "<group>"; };
+		16B44E675CBABDEC5D4DE59359630B4B /* Pods-GeologyApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GeologyApp-dummy.m"; sourceTree = "<group>"; };
+		1A0300C60E8B45A752FBD6FA79A1FF57 /* ButtonAppearance-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonAppearance-umbrella.h"; sourceTree = "<group>"; };
+		1A2B377048153267CFDE11751C0DE50A /* ButtonAppearance-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ButtonAppearance-dummy.m"; sourceTree = "<group>"; };
+		1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ButtonAppearance.xcconfig; sourceTree = "<group>"; };
+		2021DF9011D82359D43C9C181CCC52B7 /* ProgressMeter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ProgressMeter-Info.plist"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		35EA2DA2210C6D2422D0CC3DDC6DCC08 /* Pods-GeologyApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GeologyApp-frameworks.sh"; sourceTree = "<group>"; };
+		3DD4E3BB367EE5CA2BAE6DEC2AE4249D /* ProgressMeter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressMeter-umbrella.h"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		48A871D2DAD40D2EC16D1935FAFFD83B /* UIButton+Appearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Appearance.h"; path = "Pod/Classes/UIButton+Appearance.h"; sourceTree = "<group>"; };
+		4B939484174DC7A2A83D6D794DA79C4F /* CMPopTipView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMPopTipView.xcconfig; sourceTree = "<group>"; };
+		5849E2B00E53ABEC77FFB4923C86AE55 /* Pods-GeologyApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GeologyApp.modulemap"; sourceTree = "<group>"; };
+		62F8A91DCFF2500DC7F17C367D987475 /* ButtonAppearance.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonAppearance.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A45C26D65270DF349F3E3CA37835E19 /* CMPopTipView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMPopTipView-umbrella.h"; sourceTree = "<group>"; };
+		6C07441C21930B9A94FC23DDAA589244 /* ButtonAppearance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ButtonAppearance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F29FCC1BA8DFF2FE0C21CD7D1CFEDEA /* CMPopTipView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMPopTipView.modulemap; sourceTree = "<group>"; };
+		72FB3C1948DCB6E765FE6B0D0F21D48F /* CMPopTipView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMPopTipView-prefix.pch"; sourceTree = "<group>"; };
+		7BD84FBF49830340CD74BDD298938C71 /* ResourceBundle-ButtonAppearance-ButtonAppearance-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ButtonAppearance-ButtonAppearance-Info.plist"; sourceTree = "<group>"; };
+		7F442ADFB56B6E94E78F1656BA4AB152 /* CMPopTipView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMPopTipView-Info.plist"; sourceTree = "<group>"; };
+		823F6F30FDCFEBA6918AD307F4E0E3C6 /* ProgressMeter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ProgressMeter-dummy.m"; sourceTree = "<group>"; };
+		857D381B9CD5B72309F63245DFD55311 /* CMPopTipView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMPopTipView.m; path = CMPopTipView/CMPopTipView.m; sourceTree = "<group>"; };
+		860ECE41F94E9FBA4F9B361C061FCCCA /* Pods-GeologyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GeologyApp.release.xcconfig"; sourceTree = "<group>"; };
+		902A7A03C693EFF98BC4C4BC8B0B839D /* Pods-GeologyApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GeologyApp-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE064E8D82608BF2591D333D13EAAE40 /* ButtonAppearance-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ButtonAppearance-prefix.pch"; sourceTree = "<group>"; };
+		AFC1BEFE9D074477A65FFFF76E9AE764 /* ProgressMeter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ProgressMeter-prefix.pch"; sourceTree = "<group>"; };
+		B7D1374A325EFF2717C88E06B8795142 /* Pods-GeologyApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GeologyApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		B82426582A2E72AA4FF192208FE3A8A7 /* UIButton+Appearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Appearance.m"; path = "Pod/Classes/UIButton+Appearance.m"; sourceTree = "<group>"; };
+		B8EE656FBE8EEDE79646644DD79C4EC6 /* ProgressMeter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ProgressMeter.modulemap; sourceTree = "<group>"; };
+		C120D258432D8828CFC36C7C6E7D4902 /* Pods_GeologyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeologyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3ABA1BC92CF31349D597A96196018F5 /* ProgressMeter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressMeter.swift; path = ProgressMeter/Classes/ProgressMeter.swift; sourceTree = "<group>"; };
+		C96F985A3B7D6716DFFEC35D272BE584 /* ProgressMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProgressMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2EF0D65B0C4E95A032AAF9DF91E452 /* ProgressMeter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ProgressMeter.xcconfig; sourceTree = "<group>"; };
+		DF308B9C735DD3050D1DD4D013C0E9E4 /* AHButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AHButton.h; path = Pod/Classes/AHButton.h; sourceTree = "<group>"; };
+		E6814A83D7B61B09597C76A5C4687F58 /* AHButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AHButton.m; path = Pod/Classes/AHButton.m; sourceTree = "<group>"; };
+		E7DEA5C87B4B3E1646F7844195BFA4BF /* Pods-GeologyApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GeologyApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E957293E672BE8CE48646488FA71D76E /* ProgressAnnotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressAnnotation.swift; path = ProgressMeter/Classes/ProgressAnnotation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FF4A4E6718259B7D57AF6516642429E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF55CEB7C3380FB0FCF91F181EAF3FDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D3BF89E5629A07F7F92D09D23D2DF5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B85391DE56D8CBC3C19D5E1389EBF05 /* Foundation.framework in Frameworks */,
+				B3B8D532014889CFD7A022F3EFBDB3EB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD21ACB4628932D9586C979BA29270F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77305FF865CE5D6C0D3A6BF9471A2D74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4B95EC50FCA285A80505D348319D5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB4EBCD17D343398EC83E1B53D800764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD925D7BAB62B184BBD6B2E60191DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018DB49174376A976A3DF5916EE9FD4C /* ProgressMeter */ = {
+			isa = PBXGroup;
+			children = (
+				E957293E672BE8CE48646488FA71D76E /* ProgressAnnotation.swift */,
+				C3ABA1BC92CF31349D597A96196018F5 /* ProgressMeter.swift */,
+				84CA13B514EA42FB029DA65EAB23DB4B /* Support Files */,
+			);
+			path = ProgressMeter;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CC593DC4FD0B40FE929AC3FB68C7FAC /* ButtonAppearance */ = {
+			isa = PBXGroup;
+			children = (
+				DF308B9C735DD3050D1DD4D013C0E9E4 /* AHButton.h */,
+				E6814A83D7B61B09597C76A5C4687F58 /* AHButton.m */,
+				48A871D2DAD40D2EC16D1935FAFFD83B /* UIButton+Appearance.h */,
+				B82426582A2E72AA4FF192208FE3A8A7 /* UIButton+Appearance.m */,
+				9E70C87FE1AFD8C0A8F81E7CCF98CDDC /* Support Files */,
+			);
+			path = ButtonAppearance;
+			sourceTree = "<group>";
+		};
+		6B5971AF53A1AA9923742DAA09BDD251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62F8A91DCFF2500DC7F17C367D987475 /* ButtonAppearance.bundle */,
+				6C07441C21930B9A94FC23DDAA589244 /* ButtonAppearance.framework */,
+				08D402C8E74BDBF0CFD391C34D526999 /* CMPopTipView.framework */,
+				C120D258432D8828CFC36C7C6E7D4902 /* Pods_GeologyApp.framework */,
+				C96F985A3B7D6716DFFEC35D272BE584 /* ProgressMeter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		723243F1CA65A778EA70FCBE767B2DE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F29FCC1BA8DFF2FE0C21CD7D1CFEDEA /* CMPopTipView.modulemap */,
+				4B939484174DC7A2A83D6D794DA79C4F /* CMPopTipView.xcconfig */,
+				04D3BA0DE80801B0A9FE6E14879DE1B3 /* CMPopTipView-dummy.m */,
+				7F442ADFB56B6E94E78F1656BA4AB152 /* CMPopTipView-Info.plist */,
+				72FB3C1948DCB6E765FE6B0D0F21D48F /* CMPopTipView-prefix.pch */,
+				6A45C26D65270DF349F3E3CA37835E19 /* CMPopTipView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CMPopTipView";
+			sourceTree = "<group>";
+		};
+		84CA13B514EA42FB029DA65EAB23DB4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8EE656FBE8EEDE79646644DD79C4EC6 /* ProgressMeter.modulemap */,
+				DA2EF0D65B0C4E95A032AAF9DF91E452 /* ProgressMeter.xcconfig */,
+				823F6F30FDCFEBA6918AD307F4E0E3C6 /* ProgressMeter-dummy.m */,
+				2021DF9011D82359D43C9C181CCC52B7 /* ProgressMeter-Info.plist */,
+				AFC1BEFE9D074477A65FFFF76E9AE764 /* ProgressMeter-prefix.pch */,
+				3DD4E3BB367EE5CA2BAE6DEC2AE4249D /* ProgressMeter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ProgressMeter";
+			sourceTree = "<group>";
+		};
+		8A0C75768AF6E833A83971B4F3229E7F /* CMPopTipView */ = {
+			isa = PBXGroup;
+			children = (
+				04D32E4BDD084D92C80E139D0A548EA2 /* CMPopTipView.h */,
+				857D381B9CD5B72309F63245DFD55311 /* CMPopTipView.m */,
+				723243F1CA65A778EA70FCBE767B2DE4 /* Support Files */,
+			);
+			path = CMPopTipView;
+			sourceTree = "<group>";
+		};
+		8A5BC7725AC8DA1876CA96D94A214C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CC593DC4FD0B40FE929AC3FB68C7FAC /* ButtonAppearance */,
+				8A0C75768AF6E833A83971B4F3229E7F /* CMPopTipView */,
+				018DB49174376A976A3DF5916EE9FD4C /* ProgressMeter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E70C87FE1AFD8C0A8F81E7CCF98CDDC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14FF3BC99056001E2953E124BC7E3046 /* ButtonAppearance.modulemap */,
+				1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */,
+				1A2B377048153267CFDE11751C0DE50A /* ButtonAppearance-dummy.m */,
+				0D7A8101167A3C001532C41E17894278 /* ButtonAppearance-Info.plist */,
+				AE064E8D82608BF2591D333D13EAAE40 /* ButtonAppearance-prefix.pch */,
+				1A0300C60E8B45A752FBD6FA79A1FF57 /* ButtonAppearance-umbrella.h */,
+				7BD84FBF49830340CD74BDD298938C71 /* ResourceBundle-ButtonAppearance-ButtonAppearance-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ButtonAppearance";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				8A5BC7725AC8DA1876CA96D94A214C4B /* Pods */,
+				6B5971AF53A1AA9923742DAA09BDD251 /* Products */,
+				E7AE2536194255E1BBD9895B070338A3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E7AE2536194255E1BBD9895B070338A3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F372E27EC7EF2193A67E1134B37C5EFC /* Pods-GeologyApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F372E27EC7EF2193A67E1134B37C5EFC /* Pods-GeologyApp */ = {
+			isa = PBXGroup;
+			children = (
+				5849E2B00E53ABEC77FFB4923C86AE55 /* Pods-GeologyApp.modulemap */,
+				E7DEA5C87B4B3E1646F7844195BFA4BF /* Pods-GeologyApp-acknowledgements.markdown */,
+				B7D1374A325EFF2717C88E06B8795142 /* Pods-GeologyApp-acknowledgements.plist */,
+				16B44E675CBABDEC5D4DE59359630B4B /* Pods-GeologyApp-dummy.m */,
+				35EA2DA2210C6D2422D0CC3DDC6DCC08 /* Pods-GeologyApp-frameworks.sh */,
+				0B6D1648F428A95BC0A7830C4EB6E048 /* Pods-GeologyApp-Info.plist */,
+				902A7A03C693EFF98BC4C4BC8B0B839D /* Pods-GeologyApp-umbrella.h */,
+				1308080217100DBC5614BFA3C2787D21 /* Pods-GeologyApp.debug.xcconfig */,
+				860ECE41F94E9FBA4F9B361C061FCCCA /* Pods-GeologyApp.release.xcconfig */,
+			);
+			name = "Pods-GeologyApp";
+			path = "Target Support Files/Pods-GeologyApp";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		017C0E7244BDDE4B91F146D51029F760 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B4F024EE82FE181D9425E3C0845D46 /* CMPopTipView-umbrella.h in Headers */,
+				F8DEE4FCBD617916198554CA9B10D1AD /* CMPopTipView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47BE82DC6A184AC22EA3D7456DAB06C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44D97DFF96516AC56A27E7B5ADEE63C /* AHButton.h in Headers */,
+				48374B5241325BBA9BBA7F2AC5FFDD8F /* ButtonAppearance-umbrella.h in Headers */,
+				C17D4AE48EF714028CCE4444ECB315C7 /* UIButton+Appearance.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B9A6F082E37D581E06BF02DAA2426B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DB3603830BE2A092D9CCAB053A43431 /* ProgressMeter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26E5EB484E80845A5D62A25FEED8D85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FFA956BFEA6410F3E5887BBEA4671F5 /* Pods-GeologyApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4493813105C92DA6DF180CCF8D3F33E5 /* Pods-GeologyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9528BD9D3329ED3962424067BC124243 /* Build configuration list for PBXNativeTarget "Pods-GeologyApp" */;
+			buildPhases = (
+				D26E5EB484E80845A5D62A25FEED8D85 /* Headers */,
+				4D063C606D2286C919F8413337577062 /* Sources */,
+				EB4EBCD17D343398EC83E1B53D800764 /* Frameworks */,
+				0DC0C442180EC971E6F462BFB8F74B09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7D8DE31C562B57363202946A9CD8D04 /* PBXTargetDependency */,
+				FE93DCC74EF367A34E11C654BF831847 /* PBXTargetDependency */,
+				3A9267BA541A37881C701BC71C6D204B /* PBXTargetDependency */,
+			);
+			name = "Pods-GeologyApp";
+			productName = "Pods-GeologyApp";
+			productReference = C120D258432D8828CFC36C7C6E7D4902 /* Pods_GeologyApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73F2BF90EEA9BA729E4AD732ADBE8659 /* ButtonAppearance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14731C9FA946028D457475B145FA0AF /* Build configuration list for PBXNativeTarget "ButtonAppearance" */;
+			buildPhases = (
+				47BE82DC6A184AC22EA3D7456DAB06C5 /* Headers */,
+				5BC6FB64DC41F2D2D1DB05F5B5BA0015 /* Sources */,
+				4FF4A4E6718259B7D57AF6516642429E /* Frameworks */,
+				CC6D1F374E432EAD0F1DED805077F234 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47ADD414D7BECE23CC7CB56D69B8C1DF /* PBXTargetDependency */,
+			);
+			name = ButtonAppearance;
+			productName = ButtonAppearance;
+			productReference = 6C07441C21930B9A94FC23DDAA589244 /* ButtonAppearance.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FFB9D10B730282109F6C25C20B2E61C /* ButtonAppearance-ButtonAppearance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB82A7E8D3F5912C55CA7B5117E4F006 /* Build configuration list for PBXNativeTarget "ButtonAppearance-ButtonAppearance" */;
+			buildPhases = (
+				164778AC59AD80B63E93AFAD0FB90B1A /* Sources */,
+				E4B95EC50FCA285A80505D348319D5C5 /* Frameworks */,
+				945205533E9561D8DA828A54CF209FD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ButtonAppearance-ButtonAppearance";
+			productName = "ButtonAppearance-ButtonAppearance";
+			productReference = 62F8A91DCFF2500DC7F17C367D987475 /* ButtonAppearance.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9BBD78E178D7E6D4F10B606592EC7E4C /* CMPopTipView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A456087DF798DE6259619180E83C80 /* Build configuration list for PBXNativeTarget "CMPopTipView" */;
+			buildPhases = (
+				017C0E7244BDDE4B91F146D51029F760 /* Headers */,
+				4CAD0F79CF9BD7500EB7ABC66DFB0BD2 /* Sources */,
+				5D3BF89E5629A07F7F92D09D23D2DF5F /* Frameworks */,
+				B09EB39B099B3AF06BEC08B5F3C8BCEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMPopTipView;
+			productName = CMPopTipView;
+			productReference = 08D402C8E74BDBF0CFD391C34D526999 /* CMPopTipView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5A70BAA81DAD05832441F8E2E2FB5DC /* ProgressMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B055C7055DAF699FF7D64CF3FA233F5A /* Build configuration list for PBXNativeTarget "ProgressMeter" */;
+			buildPhases = (
+				9B9A6F082E37D581E06BF02DAA2426B9 /* Headers */,
+				056C763A95BB500B0175A05F6D86FF40 /* Sources */,
+				AD21ACB4628932D9586C979BA29270F8 /* Frameworks */,
+				5BB53DCF55701D8911C90E3B561E682B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProgressMeter;
+			productName = ProgressMeter;
+			productReference = C96F985A3B7D6716DFFEC35D272BE584 /* ProgressMeter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6B5971AF53A1AA9923742DAA09BDD251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73F2BF90EEA9BA729E4AD732ADBE8659 /* ButtonAppearance */,
+				8FFB9D10B730282109F6C25C20B2E61C /* ButtonAppearance-ButtonAppearance */,
+				9BBD78E178D7E6D4F10B606592EC7E4C /* CMPopTipView */,
+				4493813105C92DA6DF180CCF8D3F33E5 /* Pods-GeologyApp */,
+				B5A70BAA81DAD05832441F8E2E2FB5DC /* ProgressMeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DC0C442180EC971E6F462BFB8F74B09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BB53DCF55701D8911C90E3B561E682B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945205533E9561D8DA828A54CF209FD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B09EB39B099B3AF06BEC08B5F3C8BCEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC6D1F374E432EAD0F1DED805077F234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7EA0FF1E55BB61A680CF4F9585CDD8 /* ButtonAppearance.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		056C763A95BB500B0175A05F6D86FF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				421D996DC6EFCBBDEB0EC47CD66852EC /* ProgressAnnotation.swift in Sources */,
+				D976AA6D439604C438F24AE6509C1A89 /* ProgressMeter-dummy.m in Sources */,
+				74C11C4FE13668C6D4DA8E43AB54B054 /* ProgressMeter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		164778AC59AD80B63E93AFAD0FB90B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CAD0F79CF9BD7500EB7ABC66DFB0BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC18921DE7F3A0E6F806954E0611D74 /* CMPopTipView-dummy.m in Sources */,
+				6A654F6B37F44126E5417D4E8D4DFD29 /* CMPopTipView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D063C606D2286C919F8413337577062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21544ECEE0EB1EB8496DCB40D2277A3B /* Pods-GeologyApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC6FB64DC41F2D2D1DB05F5B5BA0015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAABF17362283A749130E9F954DCFFD9 /* AHButton.m in Sources */,
+				EF8D2058F7AA4F94B8A10A901B2AEA84 /* ButtonAppearance-dummy.m in Sources */,
+				33859C142E579648EF4A893ED341CEFF /* UIButton+Appearance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A9267BA541A37881C701BC71C6D204B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProgressMeter;
+			target = B5A70BAA81DAD05832441F8E2E2FB5DC /* ProgressMeter */;
+			targetProxy = 174D191B719B219F5935937467167D86 /* PBXContainerItemProxy */;
+		};
+		47ADD414D7BECE23CC7CB56D69B8C1DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ButtonAppearance-ButtonAppearance";
+			target = 8FFB9D10B730282109F6C25C20B2E61C /* ButtonAppearance-ButtonAppearance */;
+			targetProxy = 63C0C3C964E3B3FB7B7F7C437AB38BA9 /* PBXContainerItemProxy */;
+		};
+		C7D8DE31C562B57363202946A9CD8D04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ButtonAppearance;
+			target = 73F2BF90EEA9BA729E4AD732ADBE8659 /* ButtonAppearance */;
+			targetProxy = 6FB46E529C1F9D986797E8AFAABC0811 /* PBXContainerItemProxy */;
+		};
+		FE93DCC74EF367A34E11C654BF831847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CMPopTipView;
+			target = 9BBD78E178D7E6D4F10B606592EC7E4C /* CMPopTipView */;
+			targetProxy = 351405BF710C9E4365FE6D440C731D5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01DFB3292762FED2CFE99ABBCE6BE9E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1308080217100DBC5614BFA3C2787D21 /* Pods-GeologyApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeologyApp/Pods-GeologyApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeologyApp/Pods-GeologyApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		15F44FBDDD643DEC57C452E6A80F2E0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860ECE41F94E9FBA4F9B361C061FCCCA /* Pods-GeologyApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GeologyApp/Pods-GeologyApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GeologyApp/Pods-GeologyApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		204505C48C70AECF830F17B00D7E737F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ButtonAppearance";
+				INFOPLIST_FILE = "Target Support Files/ButtonAppearance/ResourceBundle-ButtonAppearance-ButtonAppearance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ButtonAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		395E3E173ED1A90C5AA8FBC5C292E0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2EF0D65B0C4E95A032AAF9DF91E452 /* ProgressMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressMeter/ProgressMeter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressMeter/ProgressMeter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressMeter/ProgressMeter.modulemap";
+				PRODUCT_MODULE_NAME = ProgressMeter;
+				PRODUCT_NAME = ProgressMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C8B28D4460BCED9E98EA29D18F65F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ButtonAppearance";
+				INFOPLIST_FILE = "Target Support Files/ButtonAppearance/ResourceBundle-ButtonAppearance-ButtonAppearance-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ButtonAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5F38F935EED38CEB3D1323219149AC87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B939484174DC7A2A83D6D794DA79C4F /* CMPopTipView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMPopTipView/CMPopTipView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMPopTipView/CMPopTipView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CMPopTipView/CMPopTipView.modulemap";
+				PRODUCT_MODULE_NAME = CMPopTipView;
+				PRODUCT_NAME = CMPopTipView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66B804F0097E9A9753F8A72A69E4C6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2EF0D65B0C4E95A032AAF9DF91E452 /* ProgressMeter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ProgressMeter/ProgressMeter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ProgressMeter/ProgressMeter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ProgressMeter/ProgressMeter.modulemap";
+				PRODUCT_MODULE_NAME = ProgressMeter;
+				PRODUCT_NAME = ProgressMeter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F5F59C29BB4608669233E7B0101F701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonAppearance/ButtonAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonAppearance/ButtonAppearance-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ButtonAppearance/ButtonAppearance.modulemap";
+				PRODUCT_MODULE_NAME = ButtonAppearance;
+				PRODUCT_NAME = ButtonAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AECAF5D85F2D02FBC89B17917B419E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EB13290F6C2ACE9AF8A40181935E48B /* ButtonAppearance.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ButtonAppearance/ButtonAppearance-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ButtonAppearance/ButtonAppearance-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ButtonAppearance/ButtonAppearance.modulemap";
+				PRODUCT_MODULE_NAME = ButtonAppearance;
+				PRODUCT_NAME = ButtonAppearance;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C52197E7A80C4538279D0BA96B663A42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B939484174DC7A2A83D6D794DA79C4F /* CMPopTipView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMPopTipView/CMPopTipView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMPopTipView/CMPopTipView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CMPopTipView/CMPopTipView.modulemap";
+				PRODUCT_MODULE_NAME = CMPopTipView;
+				PRODUCT_NAME = CMPopTipView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
+				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A456087DF798DE6259619180E83C80 /* Build configuration list for PBXNativeTarget "CMPopTipView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F38F935EED38CEB3D1323219149AC87 /* Debug */,
+				C52197E7A80C4538279D0BA96B663A42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9528BD9D3329ED3962424067BC124243 /* Build configuration list for PBXNativeTarget "Pods-GeologyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01DFB3292762FED2CFE99ABBCE6BE9E0 /* Debug */,
+				15F44FBDDD643DEC57C452E6A80F2E0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B055C7055DAF699FF7D64CF3FA233F5A /* Build configuration list for PBXNativeTarget "ProgressMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395E3E173ED1A90C5AA8FBC5C292E0F3 /* Debug */,
+				66B804F0097E9A9753F8A72A69E4C6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14731C9FA946028D457475B145FA0AF /* Build configuration list for PBXNativeTarget "ButtonAppearance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F5F59C29BB4608669233E7B0101F701 /* Debug */,
+				AECAF5D85F2D02FBC89B17917B419E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB82A7E8D3F5912C55CA7B5117E4F006 /* Build configuration list for PBXNativeTarget "ButtonAppearance-ButtonAppearance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C8B28D4460BCED9E98EA29D18F65F39 /* Debug */,
+				204505C48C70AECF830F17B00D7E737F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

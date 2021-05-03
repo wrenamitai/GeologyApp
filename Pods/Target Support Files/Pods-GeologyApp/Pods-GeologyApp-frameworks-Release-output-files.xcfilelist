@@ -1,0 +1,3 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ButtonAppearance.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMPopTipView.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressMeter.framework
